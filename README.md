@@ -12,9 +12,6 @@ update your ubuntu first, then install panel
 * rm main-server-installer.py; wget https://raw.githubusercontent.com/Coporton/xtreamui/main/main-server-installer.py; 
 * chmod +x *.py && sudo python main-server-installer.py;
 
-  
-If you want to install main server with admin panel, choose MAIN.  
-If you want to install load balance on additional servers, add a server to panel in manage servers page, then run script and proceed with LB option.  
 
 ### tutorials are here; ###
 
@@ -34,9 +31,8 @@ If you want to install load balance on additional servers, add a server to panel
 * newstuff.zip  
 * sha-1: "AE46E6FE4C19791BF1EE6869D11D51888476ACAB"  
 
-note: newstuff.zip has same files from my xtreamui_things repo, i won't update this zip file anymore. if i change something on those files, you can download them.  
-note2: also i still use same release_22f.zip file. if you want to use old install.py, go to bitbucket mirror page.
+
 
 ### note,
 i forked this install.py is from https://xtream-ui.com/install/install.py  
-you can compare my install.py with original one.
+you can compare my main-server-installer.py with original one.
