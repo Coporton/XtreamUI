@@ -279,9 +279,9 @@ if __name__ == "__main__":
                 start()
                 printc("Installation completed!", col.OKGREEN, 2)
                 if rType.upper() == "MAIN":
-                    printc("Please store your MySQL Root password!")
+                    printc("Please store MySQL Root password!")
                     printc(rSQL_root_pass)
-                    printc("Please store your MySQL Database password!")
+                    printc("Please store MySQL Database password!")
                     printc(rPassword)
                     printc("Admin UI: http://%s:25500" % getIP())
                     printc("Admin UI default login is admin/admin")
