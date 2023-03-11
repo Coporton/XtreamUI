@@ -67,6 +67,7 @@ def prepare(rType="MAIN"):
         # Create User
         printc("Creating user xtreamcodes")
         os.system("adduser --system --shell /bin/false --group --disabled-login xtreamcodes > /dev/null")
+        os.system("usermod -u 111 mysql && groupmod -g 121 mysql > /dev/null")
     if not os.path.exists("/home/xtreamcodes"): os.mkdir("/home/xtreamcodes")
     return True
 
@@ -285,7 +286,7 @@ if __name__ == "__main__":
                     printc(rPassword)
                     printc("Admin UI: http://%s:25500" % getIP())
                     printc("Admin UI default login is admin/admin")
-                    with open("credentials.txt", "w") as file:
+                    with open("/root/credentials.txt", "w") as file:
                         file.write("Please store your Credentials!\n")
                         file.write("MySQL Root Password is: ")
                         file.write(rSQL_root_pass + "\n")
